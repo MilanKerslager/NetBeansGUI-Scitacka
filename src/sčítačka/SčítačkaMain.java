@@ -5,6 +5,8 @@
  */
 package sčítačka;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Administrator
@@ -105,6 +107,7 @@ public class SčítačkaMain extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonKonecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonKonecActionPerformed
@@ -112,12 +115,21 @@ public class SčítačkaMain extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonKonecActionPerformed
 
     private void jButtonSečtiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSečtiActionPerformed
-        String text1 = jTextFieldScitanec1.getText();
-        String text2 = jTextFieldScitanec2.getText();
-        long cislo1 = Long.valueOf(text1);
-        long cislo2 = Long.valueOf(text2);
-        long soucet = cislo1 + cislo2;
-        jTextFieldVysledek.setText(Long.toString(soucet));
+        //String text1 = jTextFieldScitanec1.getText();
+        //String text2 = jTextFieldScitanec2.getText();
+        //long cislo1 = Long.valueOf(text1);
+        //long cislo2 = Long.valueOf(text2);
+        //long soucet = cislo1 + cislo2;
+        //jTextFieldVysledek.setText(Long.toString(soucet));
+        
+        try {
+            jTextFieldVysledek.setText(Long.toString(
+                  Long.valueOf(jTextFieldScitanec1.getText())
+                + Long.valueOf(jTextFieldScitanec2.getText())));
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(this, "Vstup musí být číslo",
+                    "Chyba", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButtonSečtiActionPerformed
 
     /**

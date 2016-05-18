@@ -39,6 +39,7 @@ public class SčítačkaMain extends javax.swing.JFrame {
         jButtonKonec = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Sčítačka");
 
         jLabel1.setText("Sčítanec 1:");
 

@@ -47,6 +47,7 @@ public class SčítačkaMain extends javax.swing.JFrame {
 
         jLabel3.setText("Výsledek:");
 
+        jButtonSečti.setBackground(new java.awt.Color(0, 255, 0));
         jButtonSečti.setText("Sečti!");
         jButtonSečti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

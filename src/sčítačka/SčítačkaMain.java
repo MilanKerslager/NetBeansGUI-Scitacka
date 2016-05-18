@@ -129,7 +129,8 @@ public class SčítačkaMain extends javax.swing.JFrame {
                   Long.valueOf(jTextFieldScitanec1.getText())
                 + Long.valueOf(jTextFieldScitanec2.getText())));
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(this, "Vstup musí být číslo",
+            // výstražné vyskakovací okno
+            JOptionPane.showMessageDialog(this, "Vstup musí být číslo!!!",
                     "Chyba", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButtonSečtiActionPerformed

@@ -41,12 +41,13 @@ public class SčítačkaMain extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sčítačka");
 
-        jLabel1.setText("Sčítanec 1:");
+        jLabel1.setText("Sčítanec:");
 
-        jLabel2.setText("Sčítanec 2:");
+        jLabel2.setText("Sčítanec:");
 
         jLabel3.setText("Výsledek:");
 
+        jButtonSečti.setBackground(new java.awt.Color(0, 255, 0));
         jButtonSečti.setText("Sečti!");
         jButtonSečti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

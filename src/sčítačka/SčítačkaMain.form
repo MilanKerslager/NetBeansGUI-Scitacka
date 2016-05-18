@@ -77,12 +77,12 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="S&#x10d;&#xed;tanec 1:"/>
+        <Property name="text" type="java.lang.String" value="S&#x10d;&#xed;tanec:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="S&#x10d;&#xed;tanec 2:"/>
+        <Property name="text" type="java.lang.String" value="S&#x10d;&#xed;tanec:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldScitanec1">
@@ -98,6 +98,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButtonSe&#x10d;ti">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Se&#x10d;ti!"/>
       </Properties>
       <Events>
